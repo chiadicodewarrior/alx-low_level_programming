@@ -1,22 +1,28 @@
 #include <stdio.h>
 /**
- * main - printing numbers from 0-9 with commas and space between them
- * Description: using the main function
- * this program prints "0, 1, 2, 3, 4, 5, 6, 7, 8, 9"
- * Return: 0
+ * main - is entry of program
+ *
+ * Return: 0, if succesful
  */
 int main(void)
 {
-char c;
-for (c = '0'; c <= '9'; c++)
-{
-putchar(c);
-if (c != '9')
-{
-putchar(',');
-putchar(' ');
+	/*
+	 * prints all single integers, with comma and space after
+	 * loops through 0-9, prints them,prints comma,print space,
+	 * use only putchar
+	 */
+	int x;
+
+	for (x = 0 ; x < 10 ; x++)
+	{
+		putchar((x % 10) + '0');
+		if (x == 9)
+		/*continue printing comma and space except if x == 9*/
+			continue;
+		putchar(',');
+		putchar(' ');
+	}
+	putchar('\n');
+	return (0);
 }
-}
-putchar('\n');
-return (0);
 }
