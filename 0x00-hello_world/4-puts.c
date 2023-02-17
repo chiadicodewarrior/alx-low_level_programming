@@ -1,8 +1,12 @@
-#include<stdio.h>
+#include <stdio.h>
+
 /**
- * main -is the entry point for the program.
- * Return:zero if no error, Non-zero value  if errors
- */
+* main - print the string in the put function
+*
+* Description: using the main function
+* this program prints "Programming is like building a multilingual puzzle
+* Return: 0
+*/
 int main(void)
 {
 	puts("\"Programming is like building a multilingual puzzle");
