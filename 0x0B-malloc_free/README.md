@@ -1,11 +1,14 @@
 my README file on 0x0B-malloc_free
+
 PROJECT DESCRIPTION
+
 In this project i learnt and practiced;
 What is the difference between automatic and dynamic allocation
 What is malloc and free and how to use them
 Why and when use malloc
 How to use valgrind to check for memory leak
 TASK FILE DESCRIPTION
+
 main.h: Header file containing prototypes for all functions written in this project.
 
 0-create_array.c: C function that returns a pointer to a newly-allocated space in memory containing an array of characters.
@@ -22,10 +25,12 @@ If str is NULL or insufficient memory was available - returns NULL.
 The returned pointer contains the contents of s1 followed by s2 and is null-terminated.
 The function treats NULL as an empty string.
 If the function fails - returns NULL.
+
 3-alloc_grid.c: C function that returns a pointer to a newly-allocated space in memory containing a two-dimensional array of integers.
 
 Each element of the two-dimensional array is initialized to 0.
 If the function fails or either of width or height is 0 or negative - returns NULL.
+
 4-free_grid.c: C function that frees a two-dimensional array previsouly created by the alloc_grid function defined in 3-alloc_grid.c.
 
 The program does not crash upon receiving invalid two-dimensional arrays.
